@@ -14,7 +14,7 @@ jobs:
       with:
         node-version: 12.x
     - name: Install app dependencies
-      run: npm ci
+      run: npm i
     - name: Run TestCafe Tests
       uses: DevExpress/testcafe-action@latest
       with:
