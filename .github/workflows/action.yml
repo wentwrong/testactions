@@ -15,6 +15,10 @@ jobs:
         node-version: 12.x
     - name: Install app dependencies
       run: npm i
+    - name: Get TestCafe version
+      uses: DevExpress/testcafe-action@latest
+      with:
+        args: "-v"
     - name: Run TestCafe Tests
       uses: DevExpress/testcafe-action@latest
       with:
